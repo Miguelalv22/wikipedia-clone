@@ -124,7 +124,7 @@ main .main-section-search {
 
 main .main-section-search form {
     display: flex;
-    width: 25%;
+    width: 23%;
     position: relative;
 }
 
@@ -133,7 +133,7 @@ main .main-section-search input {
     border: .1rem solid var(--color-subtitle);
     border-right: none;
     width: 100%;
-    height: 4rem;
+    height: 4.2rem;
     color: var(--color-white);
     font-size: 1.6rem;
 }
@@ -174,7 +174,7 @@ main .main-section-search select:focus {
 
 main .main-section-search button {
     width: 5rem;
-    height: 4rem;
+    height: 4.2rem;
     border: .1rem solid var(--color-link);
     background-color: var(--color-link);
     background-image: url("https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png");
@@ -189,4 +189,33 @@ main .main-section-search button:hover {
 
 main .main-section-search button:active {
     border: .3rem solid var(--border-color-interactive);
+}
+
+main .main-select-language {
+    margin: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+main .main-select-language img {
+    height: 2rem;
+    padding: 0 1rem;
+}
+
+main .main-select-language button {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    background-color: var(--background-color-select);
+    color: var(--color-link);
+    border: .1rem solid var(--color-subtitle);
+    font-weight: bold;
+}
+
+main .main-select-language button:hover {
+    background-color: var(--background-color-general);
+}
+
+main .main-select-language button:focus {
+    border: .2rem solid var(--border-color-interactive);
 }
