@@ -2,9 +2,11 @@
     --color-white: #eaecf0;
     --color-link: #88a3e8;
     --color-subtitle: #a2a9b1;
+    --color-button-hover: #b0c1f0;
     --background-color-general: #101418;
     --background-color-interactive: #27292d;
     --border-color-interactive: #6485d1;
+    --background-color-select: #202122;
 }
 
 html {
@@ -117,23 +119,74 @@ main .main-section-language span {
 main .main-section-search {
     display: flex;
     justify-content: center;
+
+}
+
+main .main-section-search form {
+    display: flex;
+    width: 25%;
+    position: relative;
 }
 
 main .main-section-search input {
     background-color: var(--background-color-general);
-    border: .1rem solid var(--color-white);
-    width: 20%;
+    border: .1rem solid var(--color-subtitle);
+    border-right: none;
+    width: 100%;
     height: 4rem;
     color: var(--color-white);
     font-size: 1.6rem;
 }
 
 main .main-section-search input:focus {
-    border-color: var(--border-color-interactive);
-    border-radius: 0;
+    border: .2rem solid var(--border-color-interactive);
+    outline: none;
+    border-right: none;
+}
+
+main .main-section-search div {
+    position: absolute;
+    display: block;
+    height: 2rem;
+    top: 1rem;
+    right: 6rem;
+    bottom: 1rem;
+    background-color: var(--background-color-general);
+    border: transparent;
+}
+
+main .main-section-search select {
+    background-color: var(--background-color-general);
+    border: none;
+    color: var(--color-subtitle);
+    height: 2rem;
+    width: 5rem;
+    text-align: center;
+}
+
+main .main-section-search select:hover {
+    background-color: var(--background-color-select);
+}
+
+main .main-section-search select:focus {
+    border: .1rem solid var(--border-color-interactive)
 }
 
 main .main-section-search button {
-    background-color: var(--border-color-interactive);
-    height: 4.2rem;
+    width: 5rem;
+    height: 4rem;
+    border: .1rem solid var(--color-link);
+    background-color: var(--color-link);
+    background-image: url("https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png");
+    background-position: center;
+    background-size: 1.8rem;
+    background-repeat: no-repeat;
+}
+
+main .main-section-search button:hover {
+    background-color: var(--color-button-hover);
+}
+
+main .main-section-search button:active {
+    border: .3rem solid var(--border-color-interactive);
 }
