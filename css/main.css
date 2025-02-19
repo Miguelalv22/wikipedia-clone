@@ -72,27 +72,27 @@ main .main-section-language div {
 }
 
 main .main-section-language .close-left {
-    margin-right: 6rem;
+    margin-right: 0;
 }
 
 main .main-section-language .close-right {
-    margin-left: 6rem;
+    margin-left: 0;
 }
 
 main .main-section-language .medium-left {
-    margin-right: 12rem;
+    margin-right: 10rem;
 }
 
 main .main-section-language .medium-right {
-    margin-left: 12rem;
+    margin-left: 10rem;
 }
 
 main .main-section-language .large-left {
-    margin-right: 14rem;
+    margin-right: 12rem;
 }
 
 main .main-section-language .large-right {
-    margin-left: 14rem;
+    margin-left: 12rem;
 }
 
 main .main-section-language a {
@@ -197,6 +197,16 @@ main .main-select-language {
     justify-content: center;
 }
 
+main .main-select-language hr {
+    flex-direction: row;
+}
+
+main .main-select-language div {
+    background-color: var(--background-color-general);
+    z-index: 1;
+    padding: 0 2rem
+}
+
 main .main-select-language img {
     height: 2rem;
     padding: 0 1rem;
@@ -204,6 +214,8 @@ main .main-select-language img {
 
 main .main-select-language button {
     display: flex;
+    position: relative;
+    z-index: 1;
     align-items: center;
     height: 4rem;
     background-color: var(--background-color-select);
@@ -218,4 +230,24 @@ main .main-select-language button:hover {
 
 main .main-select-language button:focus {
     border: .2rem solid var(--border-color-interactive);
+}
+
+main .div-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+main .div-list {
+    position: relative;
+    border-top: .1rem solid var(--color-subtitle);
+    bottom: 4.5rem;
+    width: 24%;
+}
+
+
+main .division {
+    border: none;
+    width: 98%;
+    border-top: .1rem solid var(--color-subtitle);
 }
