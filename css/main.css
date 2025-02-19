@@ -271,11 +271,11 @@ footer .footer-sidebar {
     margin-left: 12rem;
 }
 
-footer .footer-sidebar a {
+footer a {
     font-size: 1.3rem;
 }
 
-footer .footer-sidebar a:hover {
+footer a:hover {
     background-color: transparent;
 }
 
@@ -329,4 +329,40 @@ footer .footer-sidebar .app-info p {
 
 footer .footer-sidebar .app-info img {
     height: 5rem;
+}
+
+footer .other-project-link {
+    display: flex;
+    align-items: center;
+    margin: 0 0 3.4rem 13rem;
+    width: 22rem;
+}
+
+footer .other-project-link:hover {
+    background-color: var(--background-color-interactive);
+}
+
+footer .other-project-link .other-project {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .other-project-link .other-project a {
+    font-weight: 100;
+    font-size: 1.4rem;
+    padding: 0;
+    text-align: start;
+    margin: 0 .6rem .6rem;
+}
+
+footer .other-project-link .other-project span {
+    margin-left: .6rem;
+}
+
+footer .next-column .other-project-link {
+    margin-left: 7.6rem;
+}
+
+footer .final-column .other-project-link {
+    margin-left: 1.4rem;
 }
