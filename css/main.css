@@ -366,3 +366,26 @@ footer .next-column .other-project-link {
 footer .final-column .other-project-link {
     margin-left: 1.4rem;
 }
+
+footer .terms-policy-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+footer .terms-policy-container ul {
+    display: flex;
+    list-style: inside;
+    padding: 0;
+}
+
+footer .terms-policy-container li:first-child {
+    list-style: none;
+    margin-left: .4rem;
+}
+
+footer .terms-policy-container a {
+    padding-left: 0;
+    padding-right: 1rem;
+    font-weight: 100;
+}
